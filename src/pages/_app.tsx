@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import '../../styles/global.scss';
 import { Dna } from "react-loader-spinner";
  
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps } : {Component: any, pageProps: any}) {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
