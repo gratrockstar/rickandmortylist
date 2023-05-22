@@ -1,11 +1,21 @@
 .characters-list {
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  ul {    
     list-style-type: none;
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
     li {
-      max-width: calc( 33% - 16px);
+      margin-bottom: 1rem;
+      text-align: center;
+      @media (min-width: 768px) {
+        width: calc( 50% - 16px);
+        margin-bottom: 0;
+      }
+      @media (min-width: 992px) {
+        max-width: calc( 33% - 16px);
+      }
     }
   }
 }

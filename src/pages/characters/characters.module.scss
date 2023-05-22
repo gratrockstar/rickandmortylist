@@ -2,8 +2,10 @@
   background: #06b0c7;
   padding: 1rem;
   border-radius: 10px;
-  display: flex;
-  gap: 2rem;
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 2rem;
+  }
   .episode {
     margin-bottom:.5em;
   }

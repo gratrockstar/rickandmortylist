@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 import { fetchCharacter } from 'utils/fetchCharacter';
 import styles from './characters.module.scss';
 //import React, {useState} from 'react';
@@ -7,8 +8,7 @@ import styles from './characters.module.scss';
 export default function Character(props) {
 
   const { character } = props.character.data;
-
-  console.log(character);
+  const router = useRouter();
 
 return (
   <>
@@ -44,7 +44,7 @@ return (
       </div>
     </div>
     <div className={styles.backlink}>
-      <Link className={styles.backlinkitem} href="/">Back to List</Link>
+      <a href="#" onClick={() => router.back()}>Back to List</a>
     </div>
   </>
 );
