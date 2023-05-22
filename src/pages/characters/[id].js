@@ -53,8 +53,6 @@ return (
 
 export async function getServerSideProps(ctx) {
 
-  console.log(ctx.params?.id);
-
   const data = await fetchCharacter(ctx.params.id);
 
   return {
