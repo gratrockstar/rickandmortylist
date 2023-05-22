@@ -1,0 +1,11 @@
+.characters-list {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style-type: none;
+    li {
+      max-width: calc( 33% - 16px);
+    }
+  }
+}

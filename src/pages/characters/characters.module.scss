@@ -1,0 +1,21 @@
+.character-detail {
+  background: #06b0c7;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 2rem;
+  .episode {
+    margin-bottom:.5em;
+  }
+}
+.backlink {
+  text-align: center;
+  padding: 1em;
+}
+.backlinkitem {
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
